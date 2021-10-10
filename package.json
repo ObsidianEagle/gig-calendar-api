@@ -1,0 +1,15 @@
+{
+  "name": "gig-calendar-api",
+  "version": "1.0.0",
+  "description": "API for accessing data from a specific Google Sheet",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alex King <alex.aquus@googlemail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
