@@ -1,11 +1,14 @@
 require('dotenv').config();
 const axios = require('axios').default;
+const cors = require('cors');
 const express = require('express');
 
 const app = express();
 const port = process.env.PORT || 3000;
 const apiKey = process.env.API_KEY;
 const sheetId = process.env.SHEET_ID;
+
+app.use(cors());
 
 app.get('/', (_, res) => {
   axios
